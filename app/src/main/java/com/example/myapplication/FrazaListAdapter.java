@@ -48,6 +48,11 @@ public class FrazaListAdapter extends RecyclerView.Adapter<FrazaListAdapter.Fraz
             return 0;
     }}
 
+    void setFrazy(List<Fraza> frazy){
+        mFrazy=frazy;
+        notifyDataSetChanged();
+    }
+
     class FrazaViewHolder extends RecyclerView.ViewHolder {
 
         private final TextView frazaItemView;
